@@ -1,5 +1,5 @@
 import java.util.*;
-Interface class Vol{
+interface Vol{
      public void volume();
 }
 class Cone implements Vol{
@@ -42,14 +42,14 @@ class Cylinder implements Vol{
 }
 public class A{
      public static void main(String args[]){
-          Cone co;
+          Cone co= new Cone();
           System.out.println("Volume of cone");
           co.volume();
-          Hemisphere he;
+          Hemisphere he = new Hemisphere();
           System.out.println("Volume of hemisphere");
           he.volume();
-          Cylinder cy;
+          Cylinder cy = new Cylinder();
           System.out.println("Volume of cylinder");
-          cy.Volume();
+          cy.volume();
      }
 }
